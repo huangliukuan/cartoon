@@ -1,0 +1,49 @@
+.float{
+	float:left;
+
+}
+li{
+	list-style-type:none;
+	float:left;
+}
+a{
+	text-decoration:none;
+	font:14px 宋体;
+	line-height:32px;
+}
+section:before{
+    display: table;
+    content:'';
+}
+.flo_l{
+    float:left;
+}
+.flo_r{
+    float: right;
+}
+a:hover{text-decoration: none;}
+/* 鼠标悬停图片缩小 */
+.changeBig{
+    width: 100%;
+    transition: 1s;
+}
+.changeBig:hover{
+    transform: scale(.95);
+}
+/* 漫画名 */
+.carName{
+    font-size: 14px;
+    color:#333;
+    padding:0 6px ;
+    margin: 0;
+}
+.carName:hover{
+    color:#007FFF;
+}
+/* 清理高度坍塌 */
+section .carCont>.ulImg:after,
+section .carCont>.ulImg>.liImg:after{
+    content:"";
+    display: block;
+    clear: both;
+}
