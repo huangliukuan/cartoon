@@ -1,0 +1,349 @@
+*{margin: 0;padding:0;}
+/* 左浮动 */
+.flo_left{
+  float: left;
+}
+.flo_right{
+  float: right;
+}
+img {
+  vertical-align: middle;
+}
+/* 去掉a的下划线 */
+a{text-decoration: none;}
+/* 去掉ul左侧中的点*/
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+/* 清除高度坍塌 */
+section .cartbox>.recBox::after,
+section .cartlist .cartChp:after,
+section>.cartbox>.cartlist>.cartheader:after,
+section>.cartbox>.cartlist:after{
+  content: "";
+  display: block;
+  clear:both;
+}
+/* 主内容 */
+section{
+  color:#333;
+  font-size:16px;
+  font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial;
+  width: 1184px;
+  margin:0 auto;
+}
+
+section>.cartbox{
+  width:1170px;
+  margin: 30px 7px;
+  padding:0 15px;
+}
+section>.cartbox>.cartlist{
+  width: 1138px;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+/* 头部 */
+section>.cartbox>.cartlist>.cartheader{
+  box-sizing:border-box;
+  margin:0 24px;
+  padding:30px 0 45px;
+  border-bottom:1px solid #e5e5e5;
+}
+/* 头部左边 */
+section .cartheader>.cartleft{
+  position: relative;
+  margin-right: 40px;
+  width:338px;
+  height:213px;
+  border:1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+section .cartheader>.cartleft>img{
+  width:100%;
+  height:100%;
+  border-radius: 8px;
+}
+/* 头部右边 */
+section .cartheader>.cartright{
+  width:710px;
+}
+section .cartheader>.cartright>h3{
+  font-weight: normal;
+}
+/* 作者 */
+section .cartheader>.cartright>.cartAuthor{
+  font-size: 14px;
+  color:#bfbfbf;
+}
+/* 简介 */
+section .cartheader>.cartright>.cartIntro{
+  font-size: 14px;
+  color:#666;
+  padding-top:14px;
+  line-height:20px;
+} 
+section .cartheader>.cartright>.cartIntro>span{
+  display: inline-block;
+  border-bottom: 2px solid #f5ce03 
+}
+section .cartheader>.cartright>.cartIntro>div{
+  box-sizing: border-box;
+  width: 100%;
+  height: 74px;
+  padding: 6px 0 28px;
+  position: relative;
+}
+/* 点击按钮 */
+section .cartheader>.cartright>.btnsList{
+  padding-top:18px; 
+}
+/*左侧按钮*/
+section .cartheader>.cartright>.btnsList>.cartbtns>a{
+  display: block;
+  width: 100px;
+  border-radius: 18px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  float: left;
+}
+section .cartheader .btnsList>.cartbtns>a:first-child{
+  height: 34px;
+  line-height: 34px;
+  background-color: #ffd704;
+  border-radius: 18px;
+}
+section .cartheader .btnsList>.cartbtns>a:last-child{
+  margin-left: 20px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #999;
+  background: #fff;
+}
+section .cartheader .btnsList>.cartbtns>a:last-child:hover{
+  background-color: #ccc;
+}
+/* 按钮右侧 */
+section .btnsList>.btnsListRight{
+  padding-top: 12px;
+  position: relative;
+}
+/* 分享 */
+section .btnsList>.btnsListRight>.btnShare:hover{
+  cursor: pointer;
+  color:#ffd704;
+}
+section .btnsList>.btnsListRight>.btnShare:hover+ul{
+  display: block;
+}
+section .btnsList>.btnsListRight>ul:hover{
+  display: block;
+}
+/* 分享类别 */
+section .btnsList>.btnsListRight>ul{
+  border:1px solid #e5e5e5;
+  width:96px;
+  padding: 5px;
+  margin:0;
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  top:32px;
+  left: 0;
+}
+section .btnsList>.btnsListRight>ul>li:first-child{
+  font-size: 12px;
+  background: #eee;
+}
+section .btnsList>.btnsListRight>ul>li+li{
+  margin: 4px 4px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #333;
+  box-sizing: border-box;
+  cursor: pointer; 
+}
+section .btnsList>.btnsListRight>ul>li+li:hover{
+  background: #eee;
+}
+/* 人气和点赞 */
+section .btnsList>.btnsListRight>span{
+  display:inline-block;
+  margin:0 32px;
+}
+section .btnsList>.btnsListRight>span:last-child{
+  margin-right:0; 
+}
+/*章节 */
+section .cartlist>.chpBox{
+  padding-bottom:36px;
+}
+section .cartlist .cartChp{
+  text-align: center;
+  margin:0 24px;
+  padding:16px 0;
+  box-sizing: border-box;
+  border-bottom:1px solid #e5e5e5;
+}
+section .cartlist .cartChp>.chpImg{
+  width:30%;
+}
+section .cartlist .cartChp>.chpImg>a{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 112px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  overflow: hidden;
+}
+section .cartlist .cartChp>.chpImg>a>img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: none;
+  transition: all .5s linear;
+}
+section .cartlist .cartChp>.chpImg>a>img:hover{
+  transform: scale(1.1);
+}
+/* 章节名 */
+section .cartlist .cartChp>.chpName{
+  width:40%;
+  
+}
+section .cartlist .cartChp>div>span,
+section .cartlist .cartChp>.chpName>a{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 6px;
+  outline: 0;
+  color: #333;
+  font-size: 14px;
+  line-height: 112px;
+  transition: 0.2s;
+  font-weight: 300;
+}
+section .cartlist .cartChp>.chpName>a:hover{
+  color:#ffd704;
+}
+section .cartlist .cartChp>.laud,
+section .cartlist .cartChp>.data{
+  width:15%;
+}
+
+/* 推荐 */
+section .cartbox>.recBox{
+  width:1138px;
+  margin-top:36px;
+  border-radius: 6px;
+  border:1px solid #e5e5e5;
+}
+section .recBox>.recTitle{
+  height:20px;
+  line-height: 20px;
+  background-color: #fbfbfb;
+  border-radius: 6px;
+  padding:12px;
+}
+section .recBox>.recTitle>h5{
+  font-weight: normal;
+}
+section .recBox>.recTitle>h5>i{
+  display:block;
+  width: 6px;
+  height: 20px;
+  background-color: #f5d531;
+  border-radius: 3px;
+}
+section .recBox>.recTitle>h5>span{
+  font-size: 16px;
+  color:#666;
+  padding-left:6px; 
+}
+/* 推荐漫画 */
+section .recBox>.recCartList{
+  padding:20px 10px 20px 13px;
+}
+section .recBox .recCart{
+  width:200px;
+  border:1px solid #e5e5e5;
+  margin:0 10px 15px 10px;
+  border-radius: 3px;
+}
+/* 图片 */
+section .recBox .recCart>.imgBox{
+  width:100%;
+  height: 113px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+section .recBox .recCart>.imgBox>img{
+  width:100%;
+  height:100%;
+}
+section .recBox .recCart>.imgBox>.blankImg{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  padding: 10px 8px;
+  background: #fbd719;
+  opacity: 0.8;
+  box-sizing: border-box;
+  display: none;
+}
+section .recBox .recCart>.imgBox>img:hover+.blankImg{
+  display: block;
+}
+section .recBox .recCart>.imgBox>.blankImg:hover{
+  display: block;
+}
+section .recBox .recCart>.imgBox>.blankImg>p{
+  font-size: 14px;
+  color:#333;
+  margin-bottom: 10px;
+}
+
+/* 漫画信息 */
+section .recBox .recCart>.infor{
+  padding:0 5px;
+}
+/* 漫画名 */
+section .recBox .recCart>.infor>p{
+  padding: 10px 0 6px;
+}
+section .recBox .recCart>.infor>p>a{
+  line-height: 24px;
+  display: block;
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+  font-size: 14px;
+}
+section .recBox .recCart>.infor>p>a:hover{
+  color: #f5ce03;
+}
+section .recCart>.infor>.inforFooter{
+  padding:5px 0;
+  color:#333; 
+  font-size: 14px;
+}
+section svg{
+  vertical-align: center;
+  margin-right: 5px;
+}
